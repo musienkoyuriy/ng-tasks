@@ -8,8 +8,6 @@ class Task {
     this.controller = 'TaskController';
     this.controllerAs = 'taskCtrl';
   }
-
-  link(scope, element, attrs, ctrl) { }
 }
 
 Task.instance = () => {

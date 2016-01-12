@@ -6,8 +6,6 @@ class AddTaskForm {
     this.controller = 'CreateTaskController';
     this.controllerAs = 'createTaskCtrl';
   }
-
-  link(scope, element, attrs , ctrl) { }
 }
 
 AddTaskForm.instance = () => {
