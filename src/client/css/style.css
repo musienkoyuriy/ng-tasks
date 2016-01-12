@@ -1,0 +1,47 @@
+.tasks {
+  cursor: pointer;
+  margin-top: 7px;
+}
+
+.glyphicon {
+  cursor: pointer;
+}
+
+.tasks-menu > i {
+  cursor: pointer;
+}
+
+.task-description {
+  padding: 15px;
+}
+
+.task-title {
+  font-weight: bold;
+}
+
+.new-task-title {
+  font-size: 26px;
+  margin-left: 10px;
+}
+
+.task-title:hover {
+  text-decoration: underline;
+}
+
+.task-status {
+  font-weight: bold;
+  color: red;
+}
+
+.task-status_ready {
+  color: green;
+}
+
+.completedTask {
+  text-decoration: line-through;
+  color: #999;
+}
+
+textarea {
+  resize: none;
+}

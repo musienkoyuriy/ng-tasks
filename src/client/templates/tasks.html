@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="row">
+    <h2>Your tasks</h2>
+  </div>
+  <div class="tasks-menu row">
+    <button class="btn btn-success" ui-sref="newtask">
+      <i class="glyphicon glyphicon-plus"></i>
+      <span>Create new task</span>
+    </button>
+  </div>
+  <div class="row">
+    <table class="tasks table table-bordered table-hover" ng-show="tasksCtrl.tasks.length">
+      <tr ng-repeat="task in tasksCtrl.tasks">
+        <td task data="task"></td>
+      </tr>
+    </table>
+  </div>
+  <div class="row" ng-show="!tasksCtrl.tasks.length">
+    <h3>There are no tasks yet</h3>
+  </div>
+</div>

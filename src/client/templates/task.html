@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="task-title row">
+    <input type="checkbox"
+           ng-model="taskCtrl.done" />
+    <span ng-class="{completedTask: taskCtrl.done}"
+          ng-click="taskCtrl.toggleDescriptionVisibility()">{{taskCtrl.title}}</span>
+    <span class="glyphicon glyphicon-remove pull-right"
+          ng-click="taskCtrl.removeTask()"
+    ></span>
+  </div>
+  <div class="task-description row"
+       ng-show="taskCtrl.isDescriptionBlockActive">
+    <div>
+      <strong>Description:</strong> {{taskCtrl.description}}
+    </div>
+    <div>
+      <strong>Task priotity:</strong> {{taskCtrl.priority}}
+    </div>
+    <hr>
+    <div>
+      <span class="task-status task-status_ready"
+            ng-show="taskCtrl.done">Task is done.</span>
+      <span class="task-status"
+            ng-show="!taskCtrl.done">Task is not done.</span>
+    </div>
+  </div>
+</div>
