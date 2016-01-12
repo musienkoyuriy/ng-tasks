@@ -5,7 +5,7 @@ class TasksService {
     this.$http = $http;
   }
 
-  getTasks($http) {
+  getTasks() {
     return this.$http({
       method: 'GET',
       url: '/api/tasks'
