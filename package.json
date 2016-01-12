@@ -19,7 +19,6 @@
     "extract-text-webpack-plugin": "^0.9.1",
     "moment": "~2.11.0",
     "mongoose": "~4.3.5",
-    "node-restful": "~0.2.5",
     "body-parser": "~1.14.2"
   },
   "devDependencies": {
