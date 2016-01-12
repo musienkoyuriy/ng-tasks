@@ -29,6 +29,9 @@ function createTask(req, res) {
 function deleteTask(req, res) {
   var taskId = req.params._id;
   Task.find({_id: taskId}).remove(function(err, data) {
+    if (err) {
+      throw err;
+    }
     res.json(data);
   });
 }

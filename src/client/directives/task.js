@@ -9,9 +9,7 @@ class Task {
     this.controllerAs = 'taskCtrl';
   }
 
-  link(scope, element, attrs, ctrl) {
-    // ctrl.setData(scope.data);
-  }
+  link(scope, element, attrs, ctrl) { }
 }
 
 Task.instance = () => {
