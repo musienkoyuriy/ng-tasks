@@ -1,8 +1,8 @@
-import angular from 'angular';
+import angular from 'angular'
 
 class TasksService {
   constructor($http) {
-    this.$http = $http;
+    this.$http = $http
   }
 
   getTasks() {
@@ -14,7 +14,7 @@ class TasksService {
 
   createTask(task) {
     if (!angular.isObject(task)) {
-      return false;
+      return false
     }
     return this.$http({
       method: 'POST',
@@ -25,7 +25,7 @@ class TasksService {
 
   removeTask(id) {
     if (!angular.isString(id)) {
-      return false;
+      return false
     }
     return this.$http({
       method: 'DELETE',
@@ -35,6 +35,6 @@ class TasksService {
   }
 }
 
-TasksService.$inject = ['$http'];
+TasksService.$inject = ['$http']
 
-export default TasksService;
+export default TasksService
