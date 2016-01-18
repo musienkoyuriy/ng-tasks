@@ -1,13 +1,12 @@
 class TasksController {
   constructor(tasksService) {
-    const _this = this;
-
+    const _this = this
     tasksService.getTasks().then(function(res) {
-      _this.tasks = res.data;
+      _this.tasks = res.data
     }, function() {
-      console.log('error');
+      console.log('error')
     });
   }
 }
 
-export default TasksController;
+export default TasksController
