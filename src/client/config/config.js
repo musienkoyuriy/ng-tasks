@@ -1,8 +1,8 @@
-import TasksController from '../controllers/TasksController';
-import CreateTaskController from '../controllers/CreateTaskController';
+import TasksController from '../controllers/TasksController'
+import CreateTaskController from '../controllers/CreateTaskController'
 
 const config = ($stateProvider, $urlRouterProvider) => {
-  $urlRouterProvider.otherwise('tasks');
+  $urlRouterProvider.otherwise('tasks')
   $stateProvider
     .state('tasks', {
       url: '/tasks',
@@ -16,4 +16,4 @@ const config = ($stateProvider, $urlRouterProvider) => {
       templateUrl: 'newtask.html'
     });
 }
-export default config;
+export default config
