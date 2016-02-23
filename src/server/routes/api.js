@@ -10,7 +10,7 @@ router.delete('/task/:_id', deleteTask);
 function getTasks(req, res) {
   Task.find({}, function(err, users) {
     if (err) {
-      throw err;
+      return res.status(500).end(err);
     }
     res.send(users);
   });
@@ -20,7 +20,7 @@ function createTask(req, res) {
   var task = req.body;
   Task.create(task, function(err, task) {
     if (err) {
-      throw err;
+      return res.status(500).end(err);
     }
     res.json(task);
   });
@@ -30,7 +30,7 @@ function deleteTask(req, res) {
   var taskId = req.params._id;
   Task.find({_id: taskId}).remove(function(err, data) {
     if (err) {
-      throw err;
+      return res.status(500).end(err);
     }
     res.json(data);
   });
